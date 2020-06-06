@@ -52,7 +52,7 @@ public enum PathFinder {
                 else {
                     alreadyVisitedVertices.add(edge.dst().deviceId());
 
-                    if (edge.dst().deviceId() == dstVertex.deviceId()) {
+                    if (edge.dst().deviceId().equals(dstVertex.deviceId())) {
                         return backtrackPath(new Vertex(edge.dst(), visitVertex));
                     }
                     else if (!nextVertex.offer(new Vertex(edge.dst(), visitVertex))) {

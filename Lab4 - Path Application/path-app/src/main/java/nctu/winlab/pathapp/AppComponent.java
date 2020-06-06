@@ -249,7 +249,7 @@ public class AppComponent implements SomeInterface {
                 previousDeviceId = currentDeviceId;
                 portNumber = null;
             }
-            // packetOut(context, portNumber);
+            packetOut(context, PortNumber.TABLE);
         }
         
     }
